@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="media.css">
+    <title> Product Page </title>
+
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+</head>
+<body class="webBgColor">
+    <div class="product234Bg">
+        <div class="searchMenu">
+            <img src="./Image/Search Logo.png" class="searchLogo">
+            <span class="searchText"> Search menu... </span>
+        </div>
+        <div>
+            <div class="menuButton1 menuButtonStyle2 hoverMenu">
+                <a href="productPage1.html" class="textMenu2 hoverMenuText"> Ramen </a>
+            </div>
+            <div class="menuButton2 menuButtonStyle2 hoverMenu">
+                <a href="productPage2.html" class="textMenu2 hoverMenuText"> Rice Dishes </a>
+            </div>
+            <div class="menuButton3 menuButtonStyle2 hoverMenu">
+                <a href="productPage3.html" class="textMenu2 hoverMenuText"> Side Dishes </a>
+            </div>
+            <div class="menuButton4 menuButtonStyle1">
+                <a href="productPage4.html" class="textMenu1"> Desserts </a>
+            </div>
+        </div>
+        <div>
+            <div class="menuList1">
+                <img src="./Image/IMGDessert1.jpg" class="menuImgStyle">
+                <div class="menuDescBox">
+                    <div class="menuNameStyle"> Japanese Mochi </div>
+                    <div class="menuDescStyle"> 
+                        <div class="descriptionBox">
+                            Experience the delightful chewiness and irresistible sweetness of our Japanese Mochi, soft and pliable rice cakes filled with delectable fillings like sweet red bean paste, matcha cream, or fruity flavors, offering a delightful and traditional dessert enjoyed by all.
+                        </div> 
+                    </div>
+                    <div class="menuPriceStyle"> Rp 23,000 </div>
+                    <div class="orderButtonPos">
+                        <button class="orderButtonStyle orderButtonHover" onclick="orderAlert1()">
+                            <span class="orderTextStyle"> Order </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menuList2">
+                <img src="./Image/IMGDessert2.jpg" class="menuImgStyle">
+                <div class="menuDescBox">
+                    <div class="menuNameStyle"> Matcha Ice Cream </div>
+                    <div class="menuDescStyle"> 
+                        <div class="descriptionBox">
+                            Indulge in the exquisite taste of our Matcha Ice Cream, a creamy and velvety treat infused with the vibrant and earthy flavors of finely ground green tea powder, offering a delightful balance of sweetness and the refreshing essence of matcha in every spoonful.
+                        </div> 
+                    </div>
+                    <div class="menuPriceStyle"> Rp 29,000 </div>
+                    <div class="orderButtonPos">
+                        <button class="orderButtonStyle orderButtonHover" onclick="orderAlert2()">
+                            <span class="orderTextStyle"> Order </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menuList3">
+                <img src="./Image/IMGDessert3.jpg" class="menuImgStyle">
+                <div class="menuDescBox">
+                    <div class="menuNameStyle"> Chocolate Dorayaki </div>
+                    <div class="menuDescStyle"> 
+                        <div class="descriptionBox">
+                            Indulge in the delectable fusion of traditional and modern flavors with our Chocolate Dorayaki, where fluffy pancakes embrace a luscious chocolate filling, creating a delightful harmony of softness and richness that will satisfy any chocolate lover's cravings.
+                        </div> 
+                    </div>
+                    <div class="menuPriceStyle"> Rp 25,000 </div>
+                    <div class="orderButtonPos">
+                        <button class="orderButtonStyle orderButtonHover" onclick="orderAlert3()">
+                            <span class="orderTextStyle"> Order </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rectangleTop">
+            <img src="./Image/ERamen Logo.png" class="logoPosition">
+            <span class="eramen"> ERamen </span>
+            <img src="./Image/Profile Logo.png" class="profile">
+            <a href="myOrders.html" class="myOrder hoverText"> My Orders </a>
+        </div>
+        <div class="rectangleBot">
+            <a href="homePage.html" class="homeButton hoverText"> Home </a>
+            <a href="productPage1.html" class="menuButton hoverText"> Menu </a>
+            <a href="promoPage.html" class="offersButton hoverText"> Offers </a>
+            <a href="aboutPage.html" class="aboutButton hoverText"> About Us </a>
+            <a href="contactPage.html" class="contactButton hoverText"> Contact Us </a>
+        </div>
+    </div>
+
+    <script>
+        function orderAlert1()
+        {
+            alert("Japanese Mochi have been added to your order cart!");
+        }
+        function orderAlert2()
+        {
+            alert("Matcha Ice Cream have been added to your order cart!");
+        }
+        function orderAlert3()
+        {
+            alert("Chocolate Dorayaki have been added to your order cart!");
+        }
+    </script>
+</body>
+</html>

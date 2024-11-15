@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="media.css">
+    <title> Product Page </title>
+
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+</head>
+<body class="webBgColor">
+    <div class="product234Bg">
+        <div class="searchMenu">
+            <img src="./Image/Search Logo.png" class="searchLogo">
+            <span class="searchText"> Search menu... </span>
+        </div>
+        <div>
+            <div class="menuButton1 menuButtonStyle2 hoverMenu">
+                <a href="productPage1.html" class="textMenu2 hoverMenuText"> Ramen </a>
+            </div>
+            <div class="menuButton2 menuButtonStyle1">
+                <a href="productPage2.html" class="textMenu1"> Rice Dishes </a>
+            </div>
+            <div class="menuButton3 menuButtonStyle2 hoverMenu">
+                <a href="productPage3.html" class="textMenu2 hoverMenuText"> Side Dishes </a>
+            </div>
+            <div class="menuButton4 menuButtonStyle2 hoverMenu">
+                <a href="productPage4.html" class="textMenu2 hoverMenuText"> Desserts </a>
+            </div>
+        </div>
+        <div>
+            <div class="menuList1">
+                <img src="./Image/IMGRice1.jpg" class="menuImgStyle">
+                <div class="menuDescBox">
+                    <div class="menuNameStyle"> Teriyaki Katsu Rice Bowl </div>
+                    <div class="menuDescStyle"> 
+                        <div class="descriptionBox">
+                            A delightful fusion of Japanese flavors, our Teriyaki Katsu Rice Bowl combines succulent breaded chicken or pork cutlets with a savory teriyaki sauce, served over a bed of fluffy steamed rice for a satisfying meal.
+                        </div> 
+                    </div>
+                    <div class="menuPriceStyle"> Rp 35,000 </div>
+                    <div class="orderButtonPos">
+                        <button class="orderButtonStyle orderButtonHover" onclick="orderAlert1()">
+                            <span class="orderTextStyle"> Order </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menuList2">
+                <img src="./Image/IMGRice2.jpg" class="menuImgStyle">
+                <div class="menuDescBox">
+                    <div class="menuNameStyle"> Katsu Curry Rice </div>
+                    <div class="menuDescStyle"> 
+                        <div class="descriptionBox">
+                            Indulge in the perfect blend of crispy, golden-brown breaded chicken or pork cutlets smothered in a rich and aromatic Japanese curry sauce, served with a side of fluffy steamed rice, creating a delightful Katsu Curry Rice experience.
+                        </div> 
+                    </div>
+                    <div class="menuPriceStyle"> Rp 38,000 </div>
+                    <div class="orderButtonPos">
+                        <button class="orderButtonStyle orderButtonHover" onclick="orderAlert2()">
+                            <span class="orderTextStyle"> Order </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menuList3">
+                <img src="./Image/IMGRice3.jpg" class="menuImgStyle">
+                <div class="menuDescBox">
+                    <div class="menuNameStyle"> Japanese Omurice </div>
+                    <div class="menuDescStyle"> 
+                        <div class="descriptionBox">
+                            A mouthwatering combination of fluffy fried rice enveloped in a thin omelette, topped with a luscious tomato-based sauce, offering a savory and comforting culinary delight.
+                        </div> 
+                    </div>
+                    <div class="menuPriceStyle"> Rp 30,000 </div>
+                    <div class="orderButtonPos">
+                        <button class="orderButtonStyle orderButtonHover" onclick="orderAlert3()">
+                            <span class="orderTextStyle"> Order </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rectangleTop">
+            <img src="./Image/ERamen Logo.png" class="logoPosition">
+            <span class="eramen"> ERamen </span>
+            <img src="./Image/Profile Logo.png" class="profile">
+            <a href="myOrders.html" class="myOrder hoverText"> My Orders </a>
+        </div>
+        <div class="rectangleBot">
+            <a href="homePage.html" class="homeButton hoverText"> Home </a>
+            <a href="productPage1.html" class="menuButton hoverText"> Menu </a>
+            <a href="promoPage.html" class="offersButton hoverText"> Offers </a>
+            <a href="aboutPage.html" class="aboutButton hoverText"> About Us </a>
+            <a href="contactPage.html" class="contactButton hoverText"> Contact Us </a>
+        </div>
+    </div>
+
+    <script>
+        function orderAlert1()
+        {
+            alert("Teriyaki Katsu Rice Bowl have been added to your order cart!");
+        }
+        function orderAlert2()
+        {
+            alert("Katsu Curry Rice have been added to your order cart!");
+        }
+        function orderAlert3()
+        {
+            alert("Japanese Omurice have been added to your order cart!");
+        }
+    </script>
+</body>
+</html>

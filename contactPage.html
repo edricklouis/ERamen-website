@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="media.css">
+    <title> Contact Us Page </title>
+
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+</head>
+<body class="webBgColor">
+    <div class="webBgColor">
+        <div class="centerForm">
+            <div class="boxForm">
+                <span class="contactTitle"> CONTACT US </span>
+                <form id="contactForm" method="post">
+                    <div class="formCenter">
+                        <div class="formPos1">
+                            <input type = "text" name = "Fullname" id = "inputFullname" placeholder = "Fullname" class="form1">
+                        </div>
+                        <div class="formPos2">
+                            <input type = "email" name = "Email" id = "inputEmail" placeholder = "Email" class="form1">
+                        </div>
+                    </div>
+                    <div class="formPos3">
+                        <label for = "" class="labelStyle1"> Gender : </label>
+                        <input type = "radio" name = "Gender" id = "maleGender">
+                        <label for = "maleGender" class="labelStyle1"> Male </label>
+                        <input type = "radio" name = "Gender" id = "femaleGender">
+                        <label for = "femaleGender" class="labelStyle1"> Female </label>
+                    </div>
+                    <div class="formPos4">
+                        <label for = "" class="labelStyle1"> Where are you from : </label>
+                        <select name = "Nationality" id = "inputRegion" class="optionStyle">
+                            <option value = "Indonesia"> Indonesia </option>
+                            <option value = "America"> America </option>
+                            <option value = "China"> China </option>
+                        </select>
+                    </div>
+                    <div class="formPos5">
+                        <div>
+                            <label for = "" class="labelStyle1"> Preferences : </label>
+                            <input type = "checkbox" name = "Soup" id = "preRamenSoup">
+                            <label for = "preRamenSoup" class="labelStyle1"> Ramen soup </label>
+                        </div>
+                        <div class="preCheckBox2">
+                            <input type = "checkbox" name = "Dry" id = "preDryRamen">
+                            <label for = "preDryRamen" class="labelStyle1"> Dry ramen </label>
+                        </div>
+                        <div class="preCheckBox3">
+                            <input type = "checkbox" name = "Fried" id = "preFriedRamen">
+                            <label for = "preFriedRamen" class="labelStyle1"> Fried ramen </label>
+                        </div>
+                    </div>
+                    <div class="formPos6">
+                        <textarea name = "Message" id = "inputMessage" cols = "75" rows = "10" placeholder="Message" class="messageBox"></textarea>
+                    </div>
+                    <div class="formPos7">
+                        <input type = "radio" name = "Agreement" id = "userAgreement">
+                        <label for = "userAgreement" class="labelStyle2"> User agree to receive newsletter </label>
+                    </div>
+                    <div class="submitPos">
+                        <button class="submitButton">
+                            <span class="submitText"> Submit </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="rectangleTop">
+            <img src="./Image/ERamen Logo.png" class="logoPosition">
+            <span class="eramen"> ERamen </span>
+            <img src="./Image/Profile Logo.png" class="profile">
+            <a href="myOrders.html" class="myOrder hoverText"> My Orders </a>
+        </div>
+        <div class="rectangleBot">
+            <a href="homePage.html" class="homeButton hoverText"> Home </a>
+            <a href="productPage1.html" class="menuButton hoverText"> Menu </a>
+            <a href="promoPage.html" class="offersButton hoverText"> Offers </a>
+            <a href="aboutPage.html" class="aboutButton hoverText"> About Us </a>
+            <a href="contactPage.html" class="contactButton hoverText"> Contact Us </a>
+        </div>
+    </div>
+
+    <script>
+        const contactUs = document.getElementById("contactForm");
+
+        const name = document.getElementById("inputFullname");
+        const email = document.getElementById("inputEmail");
+        const male = document.getElementById("maleGender");
+        const female = document.getElementById("femaleGender");
+        const region = document.getElementById("inputRegion");
+        const ramenSoup = document.getElementById("preRamenSoup");
+        const drySoup = document.getElementById("preDryRamen");
+        const friedSoup = document.getElementById("preFriedRamen");
+        const message = document.getElementById("inputMessage");
+        const agreement = document.getElementById("userAgreement");
+
+        contactUs.onsubmit = function(dataInput)
+        {
+            dataInput.preventDefault();
+
+            const form1 = name.value;
+            if(form1 == "")
+            {
+                alert("Please input your fullname!");
+                return;
+            }
+
+            const form2 = email.value;
+            if(form2 == "")
+            {
+                alert("Please input your email!");
+                return;
+            }
+            if(form2.split(" ").length != 1)
+            {
+                alert("Make sure your email doesn't have a space!");
+                return;
+            }
+
+            if(!male.checked && !female.checked)
+            {
+                alert("Please choose male or female!");
+                return;
+            }
+
+            const form3 = region.value;
+            if(form3 != "Indonesia" && form3 != "America" && form3 != "China")
+            {
+                alert("Please select your country!");
+                return;
+            }
+
+            if(!ramenSoup.checked && !drySoup.checked && !friedSoup.checked)
+            {
+                alert("Please at least choose one of your preference type of ramen!");
+                return;
+            }
+
+            const form4 = message.value;
+            if(form4.length > 300)
+            {
+                alert("Please make sure your message is below than 300 characters!");
+                return;
+            }
+            else if(form4.length < 10)
+            {
+                alert("Please detail your message! (min 10 characters)");
+                return;
+            }
+
+            if(!agreement.checked)
+            {
+                alert("User must agree to receive newsletter from ERamen!");
+                return;
+            }
+
+            alert("Your message has been sent successfully, please wait for our response!")
+        }
+    </script>
+</body>
+</html>

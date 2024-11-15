@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="media.css">
+    <title> Product Page </title>
+
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+</head>
+<body class="webBgColor">
+    <div class="product234Bg">
+        <div class="searchMenu">
+            <img src="./Image/Search Logo.png" class="searchLogo">
+            <span class="searchText"> Search menu... </span>
+        </div>
+        <div>
+            <div class="menuButton1 menuButtonStyle2 hoverMenu">
+                <a href="productPage1.html" class="textMenu2 hoverMenuText"> Ramen </a>
+            </div>
+            <div class="menuButton2 menuButtonStyle2 hoverMenu">
+                <a href="productPage2.html" class="textMenu2 hoverMenuText"> Rice Dishes </a>
+            </div>
+            <div class="menuButton3 menuButtonStyle1">
+                <a href="productPage3.html" class="textMenu1"> Side Dishes </a>
+            </div>
+            <div class="menuButton4 menuButtonStyle2 hoverMenu">
+                <a href="productPage4.html" class="textMenu2 hoverMenuText"> Desserts </a>
+            </div>
+        </div>
+        <div>
+            <div class="menuList1">
+                <img src="./Image/IMGSide1.jpg" class="menuImgStyle">
+                <div class="menuDescBox">
+                    <div class="menuNameStyle"> Tempura </div>
+                    <div class="menuDescStyle"> 
+                        <div class="descriptionBox">
+                            Savor the delicate and crispy delight of our Tempura, featuring lightly battered and perfectly fried shrimp or vegetables, creating a delightful contrast of textures and flavors that will leave your taste buds craving for more.
+                        </div> 
+                    </div>
+                    <div class="menuPriceStyle"> Rp 24,000 </div>
+                    <div class="orderButtonPos">
+                        <button class="orderButtonStyle orderButtonHover" onclick="orderAlert1()">
+                            <span class="orderTextStyle"> Order </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menuList2">
+                <img src="./Image/IMGSide2.jpg" class="menuImgStyle">
+                <div class="menuDescBox">
+                    <div class="menuNameStyle"> Gyoza </div>
+                    <div class="menuDescStyle"> 
+                        <div class="descriptionBox">
+                            Indulge in the irresistible flavors of our Gyoza, succulent dumplings filled with a delectable blend of ground meat and vegetables, skillfully pan-fried to perfection, delivering a delightful crispy exterior and juicy, flavorful bite.
+                        </div> 
+                    </div>
+                    <div class="menuPriceStyle"> Rp 28,000 </div>
+                    <div class="orderButtonPos">
+                        <button class="orderButtonStyle orderButtonHover" onclick="orderAlert2()">
+                            <span class="orderTextStyle"> Order </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menuList3">
+                <img src="./Image/IMGSide3.jpg" class="menuImgStyle">
+                <div class="menuDescBox">
+                    <div class="menuNameStyle"> Takoyaki </div>
+                    <div class="menuDescStyle"> 
+                        <div class="descriptionBox">
+                            Experience the delightful taste of our Takoyaki, perfectly crispy on the outside and delightfully gooey on the inside, these savory octopus-filled balls are drizzled with tangy sauce, creamy mayonnaise, and topped with bonito flakes, creating a mouthwatering explosion of flavors in every bite.
+                        </div> 
+                    </div>
+                    <div class="menuPriceStyle"> Rp 24,000 </div>
+                    <div class="orderButtonPos">
+                        <button class="orderButtonStyle orderButtonHover" onclick="orderAlert3()">
+                            <span class="orderTextStyle"> Order </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rectangleTop">
+            <img src="./Image/ERamen Logo.png" class="logoPosition">
+            <span class="eramen"> ERamen </span>
+            <img src="./Image/Profile Logo.png" class="profile">
+            <a href="myOrders.html" class="myOrder hoverText"> My Orders </a>
+        </div>
+        <div class="rectangleBot">
+            <a href="homePage.html" class="homeButton hoverText"> Home </a>
+            <a href="productPage1.html" class="menuButton hoverText"> Menu </a>
+            <a href="promoPage.html" class="offersButton hoverText"> Offers </a>
+            <a href="aboutPage.html" class="aboutButton hoverText"> About Us </a>
+            <a href="contactPage.html" class="contactButton hoverText"> Contact Us </a>
+        </div>
+    </div>
+
+    <script>
+        function orderAlert1()
+        {
+            alert("Tempura have been added to your order cart!");
+        }
+        function orderAlert2()
+        {
+            alert("Gyoza have been added to your order cart!");
+        }
+        function orderAlert3()
+        {
+            alert("Takoyaki have been added to your order cart!");
+        }
+    </script>
+</body>
+</html>
